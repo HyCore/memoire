@@ -1,0 +1,20 @@
+gantt
+    title Déploiement de Wazuh chez Viaccess-Orca
+    dateFormat  YYYY-MM-DD
+    axisFormat  %Y-%m
+
+    section Phases
+    Préparation et planification      :a1, 2023-05-01, 30d
+    Mise en place de l'infrastructure :a2, after a1  , 60d
+    Installation et configuration     :a3, after a2  , 45d
+    Déploiement initial des agents    :a4, after a3  , 90d
+    Tests et optimisation             :a5, after a4  , 60d
+    Planification de l'expansion      :a6, after a5  , 30d
+
+    section Jalons
+    Début du projet                   :milestone, m1, 2023-05-01, 0d
+    Infrastructure prête              :milestone, m2, after a2, 0d
+    Wazuh opérationnel                :milestone, m3, after a3, 0d
+    Déploiement initial terminé       :milestone, m4, after a4, 0d
+    Tests et optimisations terminés   :milestone, m5, after a5, 0d
+    Planification expansion terminée  :milestone, m6, after a6, 0d
