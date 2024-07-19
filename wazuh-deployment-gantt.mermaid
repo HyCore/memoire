@@ -1,20 +1,28 @@
 gantt
-    title Déploiement de Wazuh chez Viaccess-Orca
+    title Projet Wazuh chez Viaccess-Orca
     dateFormat  YYYY-MM-DD
     axisFormat  %Y-%m
 
     section Phases
-    Préparation et planification      :a1, 2023-05-01, 30d
-    Mise en place de l'infrastructure :a2, after a1  , 60d
-    Installation et configuration     :a3, after a2  , 45d
-    Déploiement initial des agents    :a4, after a3  , 90d
-    Tests et optimisation             :a5, after a4  , 60d
-    Planification de l'expansion      :a6, after a5  , 30d
+    Recherche d'outil et POC           :a1, 2023-05-01, 150d
+    Évaluation du POC                  :a2, after a1  , 30d
+    Organisation et planification      :a3, 2023-10-01, 90d
+    Mise en place de l'infrastructure  :a4, 2024-01-01, 45d
+    Installation et configuration      :a5, after a4  , 30d
+    Déploiement pilote                 :a6, after a5  , 45d
+    Tests et optimisation pilote       :a7, after a6  , 30d
+    Déploiement étendu                 :a8, after a7  , 60d
+    Tests et optimisation finaux       :a9, after a8  , 30d
+    Validation et clôture              :a10, after a9 , 14d
 
     section Jalons
-    Début du projet                   :milestone, m1, 2023-05-01, 0d
-    Infrastructure prête              :milestone, m2, after a2, 0d
-    Wazuh opérationnel                :milestone, m3, after a3, 0d
-    Déploiement initial terminé       :milestone, m4, after a4, 0d
-    Tests et optimisations terminés   :milestone, m5, after a5, 0d
-    Planification expansion terminée  :milestone, m6, after a6, 0d
+    Début du projet                    :milestone, m1, 2023-05-01, 0d
+    Fin du POC                         :milestone, m2, after a2, 0d
+    Plan de déploiement validé         :milestone, m3, after a3, 0d
+    Infrastructure prête               :milestone, m4, after a4, 0d
+    Wazuh opérationnel                 :milestone, m5, after a5, 0d
+    Déploiement pilote terminé         :milestone, m6, after a6, 0d
+    Optimisations pilote terminées     :milestone, m7, after a7, 0d
+    Déploiement étendu terminé         :milestone, m8, after a8, 0d
+    Tests finaux terminés              :milestone, m9, after a9, 0d
+    Projet clôturé                     :milestone, m10, after a10, 0d
